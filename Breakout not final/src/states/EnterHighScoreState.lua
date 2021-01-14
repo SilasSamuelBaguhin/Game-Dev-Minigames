@@ -54,7 +54,7 @@ function EnterHighScoreState:update(dt)
 
         love.filesystem.write('breakout.lst', scoresStr)
 
-        gStateMachine:change('high-scores', {
+        gStateMachine:change('high-Scrs', {
             highScores = self.highScores
         })
     end
@@ -110,7 +110,7 @@ function EnterHighScoreState:render()
     love.graphics.print(string.char(chars[3]), VIRTUAL_WIDTH / 2 + 20, VIRTUAL_HEIGHT / 2)
     love.graphics.setColor(255, 255, 255, 255)
     
-    love.graphics.setFont(gFonts['small'])
+    love.graphics.setFont(gFonts['sml'])
     love.graphics.printf('Press Enter to confirm!', 0, VIRTUAL_HEIGHT - 18,
         VIRTUAL_WIDTH, 'center')
 end

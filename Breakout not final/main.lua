@@ -105,7 +105,7 @@ function love.load()
         ['paddle-select'] = function() return PaddleSelectState() end
     }
     gStateMachine:change('start', {
-        highScrs = loadHighScrs()
+        highScores = loadHighScrs()
     })
 
     gSounds['music']:play()

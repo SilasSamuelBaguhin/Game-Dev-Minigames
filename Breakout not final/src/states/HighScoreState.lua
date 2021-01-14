@@ -28,10 +28,10 @@ function HighScoreState:update(dt)
 end
 
 function HighScoreState:render()
-    love.graphics.setFont(gFonts['large'])
+    love.graphics.setFont(gFonts['lrg'])
     love.graphics.printf('High Scores', 0, 20, VIRTUAL_WIDTH, 'center')
 
-    love.graphics.setFont(gFonts['medium'])
+    love.graphics.setFont(gFonts['mdm'])
 
     -- iterate over all high score indices in our high scores table
     for i = 1, 10 do

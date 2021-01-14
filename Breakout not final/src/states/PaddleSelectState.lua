@@ -65,10 +65,10 @@ end
 
 function PaddleSelectState:render()
     -- instructions
-    love.graphics.setFont(gFonts['medium'])
+    love.graphics.setFont(gFonts['mdm'])
     love.graphics.printf("Select your paddle with left and right!", 0, VIRTUAL_HEIGHT / 4,
         VIRTUAL_WIDTH, 'center')
-    love.graphics.setFont(gFonts['small'])
+    love.graphics.setFont(gFonts['sml'])
     love.graphics.printf("(Press Enter to continue!)", 0, VIRTUAL_HEIGHT / 3,
         VIRTUAL_WIDTH, 'center')
         

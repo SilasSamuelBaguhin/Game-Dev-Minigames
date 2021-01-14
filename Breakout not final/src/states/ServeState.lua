@@ -76,11 +76,11 @@ function ServeState:render()
     renderHealth(self.health)
     renderKeys(self.keys)
     
-    love.graphics.setFont(gFonts['large'])
+    love.graphics.setFont(gFonts['lrg'])
     love.graphics.printf('Level ' .. tostring(self.level), 0, VIRTUAL_HEIGHT / 3,
         VIRTUAL_WIDTH, 'center')
 
-    love.graphics.setFont(gFonts['medium'])
+    love.graphics.setFont(gFonts['mdm'])
     love.graphics.printf('Press Enter to serve!', 0, VIRTUAL_HEIGHT / 2,
         VIRTUAL_WIDTH, 'center')
 end

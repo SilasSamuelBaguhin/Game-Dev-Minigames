@@ -83,11 +83,11 @@ function EnterHighScoreState:update(dt)
 end
 
 function EnterHighScoreState:render()
-    love.graphics.setFont(gFonts['medium'])
+    love.graphics.setFont(gFonts['mdm'])
     love.graphics.printf('Your score: ' .. tostring(self.score), 0, 30,
         VIRTUAL_WIDTH, 'center')
 
-    love.graphics.setFont(gFonts['large'])
+    love.graphics.setFont(gFonts['lrg'])
     
     --
     -- render all three characters of the name

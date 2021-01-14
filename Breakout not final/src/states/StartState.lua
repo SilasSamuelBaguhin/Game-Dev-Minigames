@@ -40,7 +40,7 @@ function StartState:update(dt)
                 highScores = self.highScores
             })
         else
-            gStateMachine:change('high-scores', {
+            gStateMachine:change('high-Scrs', {
                 highScores = self.highScores
             })
         end
@@ -54,12 +54,12 @@ end
 
 function StartState:render()
     -- title
-    love.graphics.setFont(gFonts['large'])
+    love.graphics.setFont(gFonts['lrg'])
     love.graphics.printf("BREAKOUT", 0, VIRTUAL_HEIGHT / 3,
         VIRTUAL_WIDTH, 'center')
     
     -- instructions
-    love.graphics.setFont(gFonts['medium'])
+    love.graphics.setFont(gFonts['mdm'])
 
     -- if we're highlighting 1, render that option blue
     if highlighted == 1 then

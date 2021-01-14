@@ -100,12 +100,12 @@ function love.load()
         ['serve'] = function() return ServeState() end,
         ['game-over'] = function() return GameOverState() end,
         ['victory'] = function() return VictoryState() end,
-        ['high-Scrs'] = function() return HighScrstate() end,
-        ['enter-high-score'] = function() return EnterHighScrstate() end,
+        ['high-Scrs'] = function() return HighScoreState() end,
+        ['enter-high-score'] = function() return EnterHighScoreState() end,
         ['paddle-select'] = function() return PaddleSelectState() end
     }
     gStateMachine:change('start', {
-        highScrs = loadHighScrs()
+        highScores = loadHighScrs()
     })
 
     gSounds['music']:play()
@@ -166,7 +166,7 @@ end
 function loadHighScrs()
     love.filesystem.setIdentity('breakout')
 
-    if not love.filesystem.getInfo('breakout.lst') == nil then
+    if not love.filesystem.getInfo('breakout.lst') then
         local Scrs = ''
         for i = 10, 1, -1 do
             Scrs = Scrs .. 'CTO\n'
